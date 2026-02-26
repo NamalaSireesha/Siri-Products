@@ -86,12 +86,14 @@
                 width: 100%;
                 border: 2px solid black;
                 object-fit: cover;
-            }           
-            /*.item-card a {
-                text-decoration: none;
-                font-weight: bold;
-                color: #007185;
-            }*/
+            }   
+            .item-card img {
+                transition: transform 0.3s;
+            }
+            .item-card:hover img {
+                transform: scale(1.1);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            }
             .footer {
                 background-color: #333;
                 color: white;
@@ -105,7 +107,8 @@
                 background-color: #33333357;
                 color: black;
                 margin-top: 40px;
-            }            
+            }     
+                  
         </style>
     </head>    
     <body>
@@ -117,14 +120,14 @@
                 <div class="nav-links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#products">Products</a>
+                    <a href="My-cart.js">My Cart</a>
                     <a href="#contact">Contact</a>
                 </div>
             </nav>
         </header>
         <main>
             <div id="logo"><h1 id="siri">SIRI PRODUCTS</h1></div>
-            <div><h1 id="s">Where Quality and Quantity meet...</h1></div>    
+            <div><h1 id="s">Where Quality and Quantity meet...</h1></div> 
             <h2 id="section-1" style="color:#FF6500;">ELECTRONICS</h2>
             <div class="items-container">
                 <div class="item-card">
@@ -256,5 +259,6 @@
                 <p>&copy; 2025 SIRI PRODUCTS. All Rights Reserved.</p>
             </footer>
         </main>
+        <script src="My-cart.js"></script>
     </body>
 </html>
