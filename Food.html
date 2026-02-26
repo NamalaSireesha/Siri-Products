@@ -31,36 +31,18 @@
                 padding:100px;
                 padding-top: 20px;
             }
-            #buy1{
-                margin-left: 270px;
-                padding-top: 12px;
+            #cart{
+                margin-left: 155px;
+                padding-top: 5px;
                 width: 150px;
                 height: 25px;
                 text-align: center;
                 background-color: yellow;
                 border-radius: 15%;
             }
-            #cart1{
-                margin-left: 270px;
-                padding-top: 12px;
-                width: 150px;
-                height: 25px;
-                text-align: center;
-                background-color: orange;
-                border-radius: 15%;
-            }
-            #buy2{
-                margin-left: 320px;
-                padding-top: 12px;
-                width: 150px;
-                height: 25px;
-                text-align: center;
-                background-color: yellow;
-                border-radius: 15%;
-            }
-            #cart2{
-                margin-left: 320px;
-                padding-top: 12px;
+            #view_product{
+                margin-left: 250px;
+                padding-top: 5px;
                 width: 150px;
                 height: 25px;
                 text-align: center;
@@ -69,47 +51,50 @@
             }
         </style>
     </head>
-    <main>
-        <h1>FOOD</h1>
-        <div ID="block1">
-            <div id="photo1"><img src="Food & Bevarages/Food-1.png" style="width: 550px; height:500px"></div>
-            <div id="text1">
-                <h3 id="item">PASTA</h3>
-                <h3>It is a delicious and versatile Italian dish made from wheat or rice flour, pasta comes in various shapes and flavors. Perfect for quick meals, it's enjoyed with sauces like tomato, cheese, or pesto—ideal for both home cooking and gourmet cravings.</h4>
-                <h2>COST : 45</h2>
-                <h4>QUANTITY</h4>
-                <select>
-                    <option>Quantity : 1</option>
-                    <option>Quantity : 2</option>
-                    <option>Quantity : 3</option>
-                </select>
-                <h5 id="buy1">BUY NOW</h5>
-                <h4 id="cart1">
-                    <a href="Food & Bevarages/Food-1.mp4" style="text-decoration: none; color: inherit;">
-                        VIEW PRODUCT
-                    </a>
-                </h4>
+    <body>
+        <main>
+            <h1>FOOD</h1>
+            <div ID="block1">
+                <div id="photo1"><img src="Food & Bevarages/Food-1.png" style="width: 550px; height:500px"></div>
+                <div id="text1">
+                    <h3 id="item">PASTA</h3>
+                    <h3>It is a delicious and versatile Italian dish made from wheat or rice flour, pasta comes in various shapes and flavors. Perfect for quick meals, it's enjoyed with sauces like tomato, cheese, or pesto—ideal for both home cooking and gourmet cravings.</h4>
+                    <h2>COST : 45</h2>
+                    <h4>QUANTITY</h4>
+                    <select>
+                        <option>Quantity : 1</option>
+                        <option>Quantity : 2</option>
+                        <option>Quantity : 3</option>
+                    </select>
+                    <button id="cart" onclick="addToCart('PASTA',45)" style="text-decoration: none; color: inherit;"><strong>Add to cart</strong></button>                
+                    <h4 id="view_product">
+                        <a href="Food & Bevarages/Food-1.mp4" style="text-decoration: none; color: inherit;">
+                            VIEW PRODUCT
+                        </a>
+                    </h4>
+                </div>
             </div>
-        </div>
-        <div ID="block2">
-            <div id="photo2"><img src="Food & Bevarages/Food-2.png" style="width: 550px; height:500px"></div>
-            <div id="text2">
-                <h3 id="item">BURGER COMBO</h3>
-                <h3>A delicious meal combo featuring a juicy burger, crispy fries, and a refreshing drink—perfect for satisfying your hunger in one tasty bite! Ideal for quick lunches, dinners, or fun snack times.</h4>
-                <h2>COST : 400</h2>
-                <h4>QUANTITY</h4>
-                <select>
-                    <option>Quantity : 1</option>
-                    <option>Quantity : 2</option>
-                    <option>Quantity : 3</option>
-                </select>
-                <h5 id="buy2">BUY NOW</h5>
-                <h4 id="cart2">
-                    <a href="Food & Bevarages/Food-2.mp4" style="text-decoration: none; color: inherit;">
-                        VIEW PRODUCT
-                    </a>
-                </h4>
+            <div ID="block2">
+                <div id="photo2"><img src="Food & Bevarages/Food-2.png" style="width: 550px; height:500px"></div>
+                <div id="text2">
+                    <h3 id="item">BURGER COMBO</h3>
+                    <h3>A delicious meal combo featuring a juicy burger, crispy fries, and a refreshing drink—perfect for satisfying your hunger in one tasty bite! Ideal for quick lunches, dinners, or fun snack times.</h4>
+                    <h2>COST : 400</h2>
+                    <h4>QUANTITY</h4>
+                    <select>
+                        <option>Quantity : 1</option>
+                        <option>Quantity : 2</option>
+                        <option>Quantity : 3</option>
+                    </select>
+                    <button id="cart" onclick="addToCart('BURGER COMBO',400)" style="text-decoration: none; color: inherit;"><strong>Add to cart</strong></button>                
+                    <h4 id="view_product">
+                        <a href="Food & Bevarages/Food-2.mp4" style="text-decoration: none; color: inherit;">
+                            VIEW PRODUCT
+                        </a>
+                    </h4>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+        <script src="Main.js"></script>
+    </body>
 </html>
